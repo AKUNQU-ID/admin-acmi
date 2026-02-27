@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACMI Connect Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #d0d0d0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      display: flex;
+      background-color: #fff;
+      width: 800px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .left {
+      flex: 1;
+      background-color: #fff;
+      padding: 40px;
+      position: relative;
+    }
+
+    .left::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 60px solid #0426ed;
+      border-right: 60px solid transparent;
+    }
+
+    .left img {
+      width: 150px;
+      margin-bottom: 20px;
+      margin: 0px auto;
+      display: block;
+    }
+
+    .left p {
+      font-size: 14px;
+      color: #333;
+      text-align: center;
+    }
+
+    .left .footer-bar {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+    }
+
+    .left .footer-bar ul {
+      list-style: none;
+      padding: 0;
+      margin: 5px 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .left .footer-bar ul li {
+      margin: 0;
+    }
+
+    .left .footer-bar ul li a {
+      text-decoration: none;
+      color: #d71c2e;
+    }
+
+    .right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right h2 {
+      margin: 0 0 10px 0;
+      color: #ed8317;
+    }
+
+    .right p {
+      margin: 0 0 20px 0;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .right input {
+      width: 90%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #f9f9f9;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .right button {
+      width: 100%;
+      padding: 12px;
+      background-color: #0b35f5;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .right button:hover {
+      background-color: #b41726;
+    }
+
+    .right .links {
+      margin-top: 15px;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .right .links a {
+      color: #d71c2e;
+      text-decoration: none;
+    }
+
+    .download-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .download-buttons a img {
+      width: 140px;
+    }
+
+    @media(max-width: 768px){
+      .login-container {
+        flex-direction: column;
+        width: 90%;
+      }
+      .left, .right {
+        flex: unset;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="left">
+      <img src="assets/images/logo-acmi.png" alt="ACMI Logo">
+      <p>
+        ACMI Connect is an online social media platform for ACMI Members only. 
+        To participate in ACMI Connect, please join a local ACMI chapter.
+      </p>
+      <div class="footer-bar">
+        <span>Copyright 2026 ACMI. All Rights Reserved</span>
+        <ul>
+          <li><a href="#" target="_blank">Terms of use</a></li>|
+          <li><a href="#" target="_blank">Privacy Policy</a></li>|
+          <li><a href="#" target="_blank">Browser Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="right">
+      <h2>Sign-in to ACMI Connect</h2>
+      <form action="dashboard.html">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button type="submit">SIGN IN</button>
+      </form>
+      <div class="links">
+        <a href="#">or click here to register or reset your password!</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
